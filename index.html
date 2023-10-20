@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
+    <title>Currency Converter</title>
     <!-- custom style -->
     <link rel="stylesheet" href="customstyle.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+
+    <div class="container">
+        <h1>Currency Converter</h1>
+
+        <div class="currency-container">
+            <select id="currencyFirst">
+                <option value="USD" selected>USD</option>
+                <option value="EUR">EUR</option>
+                <option value="TRY">TRY</option>
+                <option value="CAD">CAD</option>
+                <option value="JPY">JPY</option>
+            </select>
+            <input type="number" id="count" value="1" min="0">
+        </div>
+        <i class="fa-solid fa-repeat"></i>
+        <div class="currency-container">
+            <select id="currencySecond">
+                <option value="TRY" selected>TRY</option>
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="CAD">CAD</option>
+                <option value="JPY">JPY</option>
+            </select>
+            <span id="equal">0.00</span>
+        </div>
+        <p class="exchangeRate" id="exchangeRate"></p>
+    </div>
+
     <!-- custom js -->
-    <script src="customjs.js"></script>r
+    <script src="customjs.js"></script>
 </body>
+
 </html>
